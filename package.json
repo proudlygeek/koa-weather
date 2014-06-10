@@ -1,0 +1,16 @@
+{
+  "name": "weather-app",
+  "version": "0.1.0",
+  "description": "Simple Node.js Endpoint Powered By Harmony Generators and Koa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^0.7.0",
+    "q": "^1.0.1",
+    "request": "^2.36.0"
+  }
+}
