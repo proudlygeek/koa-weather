@@ -1,7 +1,7 @@
 'use strict';
 
 var koa = require('koa'),
-    Q   = require('Q'),
+    Q   = require('q'),
     app = koa();
 
 var request = Q.denodeify(require('request'));
