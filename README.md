@@ -1,6 +1,6 @@
 # weather
 
-An example Weather API response: given an IP it tracks down the 
+An example Weather API response: given an IP it tracks down the Local City Weather Temperature. 
 
 It uses Node.js 0.11.x Harmony Generators and Koa Framework[1].
 
@@ -16,10 +16,14 @@ heroku addons:add redistogo:nano
 git push heroku master
 ```
 
+# Example
+
 Here's a sample endpoint to try it out:
 
-`http://koa-weather.herokuapp.com?ip=8.8.8.8`
+```bash
+curl http://koa-weather.herokuapp.com?ip=8.8.8.8
+```
 
-If you *omit* the GET parameter then the *requester's IP* is used.
+If you *omit* the GET parameter then the *requester's IP* is used
 
 [1]: http://koajs.com/
