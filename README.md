@@ -1,4 +1,4 @@
-# weather
+# Koa Weather API
 
 An example Weather API response: given an IP it tracks down the Local City Weather Temperature. 
 
@@ -16,7 +16,7 @@ heroku addons:add redistogo:nano
 git push heroku master
 ```
 
-# Example
+## Example
 
 Here's a sample endpoint to try it out:
 
@@ -24,6 +24,15 @@ Here's a sample endpoint to try it out:
 curl http://koa-weather.herokuapp.com?ip=8.8.8.8
 ```
 
+will send a JSON Response like this:
+
+```json
+{"ip":"8.8.8.8","city":"Mountain View","temperature":14,"message":"Today, Mountain View will be 14 degrees."}
+```
+
 If you *omit* the GET parameter then the *requester's IP* is used
+
+## License
+MIT
 
 [1]: http://koajs.com/
