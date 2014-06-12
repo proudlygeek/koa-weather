@@ -7,8 +7,10 @@ var koa         = require('koa'),
 var request     = Q.denodeify(require('request')),
     port        = process.env.PORT || 8080;
 
-if (process.env.REDISTOGO_URL) {
-    var rtg     = require('url').parse(process.env.REDISTOGO_URL);
+var redisUrl = process.env.REDIS_URL || process.env.REDISTOGO_URL;
+
+if (redisUrl) {
+    var rtg     = require('url').parse(redisUrl);
     var redis   = require('redis').createClient(rtg.port, rtg.hostname);
 
     redis.auth(rtg.auth.split(":")[1]);
