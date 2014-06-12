@@ -30,7 +30,17 @@ will send a JSON Response like this:
 {"ip":"8.8.8.8","city":"Mountain View","temperature":14,"message":"Today, Mountain View will be 14 degrees."}
 ```
 
-If you *omit* the GET parameter then the *requester's IP* is used
+If you *omit* the GET parameter then the *requester's IP* is used:
+
+```bash
+curl http://koa-weather.herokuapp.com
+```
+
+Will return:
+
+```json
+{"ip":"xx.xx.xx.xx","city":"Rome","temperature":26,"message":"Today, Rome will be 26 degrees."}
+```
 
 ## License
 MIT
