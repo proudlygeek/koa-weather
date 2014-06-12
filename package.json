@@ -9,7 +9,7 @@
   "author": "",
   "license": "MIT",
   "engines": {
-    "node": ">=0.11.13"
+    "node": "0.11.x"
   },
   "dependencies": {
     "hiredis": "^0.1.17",
