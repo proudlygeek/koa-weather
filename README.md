@@ -2,7 +2,7 @@
 
 An example Weather API response: given an IP it tracks down the Local City Weather Temperature. 
 
-It uses Node.js 0.11.x Harmony Generators and Koa Framework[1].
+It uses Node.js 0.11.x Harmony Generators and [Koa Framework][1].
 
 ## Usage
 You will need Node 0.11.x to run the server. 
