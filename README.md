@@ -36,7 +36,7 @@ If you *omit* the GET parameter then the *requester's IP* is used:
 curl http://koa-weather.herokuapp.com
 ```
 
-Will return:
+will return:
 
 ```json
 {"ip":"xx.xx.xx.xx","city":"Rome","temperature":26,"message":"Today, Rome will be 26 degrees."}
